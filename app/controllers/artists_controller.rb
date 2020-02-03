@@ -1,7 +1,7 @@
 class ArtistsController < ApplicationController
      def index 
-        binding.pry
-      @artist = Artist.all
+        #binding.pry
+      @artists = Artist.all
         
      end
      

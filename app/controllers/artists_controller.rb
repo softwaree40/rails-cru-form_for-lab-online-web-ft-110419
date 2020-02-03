@@ -10,11 +10,12 @@ class ArtistsController < ApplicationController
      end
      
      def new 
-       @artist = Artist .new 
+       @artist = Artist.new 
      end
      
      def create 
       @artist = Arist.create(aritst_params(:name,:bio))
+      redirect_to artist_path(@artist)
      end
      
      def edit 

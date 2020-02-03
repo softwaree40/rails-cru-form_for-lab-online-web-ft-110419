@@ -1,4 +1,5 @@
-class ArtistsController < ApplicationController
+class SongsController < ApplicationController
+    class ArtistsController < ApplicationController
      def index 
        
      end
@@ -22,5 +23,7 @@ class ArtistsController < ApplicationController
      def update 
        
      end
+  
+end
   
 end

@@ -6,8 +6,7 @@ class ArtistsController < ApplicationController
      end
      
      def show 
-        
-       @artist = Artist.find(params[:id]) 
+      @artist = Artist.find(params[:id]) 
        #binding.pry
      end
      
@@ -16,7 +15,7 @@ class ArtistsController < ApplicationController
      end
      
      def create 
-      @artist = Arist.create(aritst_params(:name,:bio))
+      @artist = Arist.create(aritst_params(:name, :bio ))
       redirect_to artist_path(@artist)
      end
      
